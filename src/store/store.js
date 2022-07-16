@@ -5,7 +5,7 @@ import storage from 'redux-persist/lib/storage';
 
 const persistConfig = {
   key: 'counters',
-  storage: storage,
+  storage,
 }
 const persistedReducer = persistReducer(persistConfig, countersReducer);
 
